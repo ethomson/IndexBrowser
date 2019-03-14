@@ -1,0 +1,42 @@
+﻿<Window x:Class="IndexBrowser.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IndexBrowser"
+        mc:Ignorable="d"
+        Title="Index Browser" Height="450" Width="800" MinHeight="350" MinWidth="650">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80*"/>
+            <RowDefinition Height="339*"/>
+        </Grid.RowDefinitions>
+
+        <Menu Height="27" VerticalAlignment="Top">
+            <MenuItem Header="_File" Height="27">
+                <MenuItem Name="FileOpen" Header="_Open" />
+                <Separator />
+                <MenuItem Header="_Exit" />
+            </MenuItem>
+        </Menu>
+
+        <Label Content="Repository:" HorizontalAlignment="Left" Margin="10,32,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="Repository" Height="19" Margin="84,36,10,0" TextWrapping="Wrap" Text="" IsReadOnly="True" VerticalAlignment="Top"/>
+
+        <DataGrid Name="Directory" ItemsSource="{Binding Source=list}" Margin="10,63,10,10" IsReadOnly="True" AutoGenerateColumns="False" CanUserResizeRows="False" GridLinesVisibility="Horizontal" HorizontalGridLinesBrush="#FFDADADA" AlternatingRowBackground="#FFF3F3F3" Grid.RowSpan="2">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Name" Binding="{Binding Name}" FontFamily="Lucida Console" Width="*"/>
+                <DataGridTextColumn Header="Stage" Binding="{Binding Stage}" FontFamily="Lucida Console" Width="50"/>
+                <DataGridTextColumn Header="Mode" Binding="{Binding Mode}" FontFamily="Lucida Console" Width="60"/>
+                <DataGridTextColumn Header="ID" Binding="{Binding Id}" FontFamily="Lucida Console" Width="300"/>
+            </DataGrid.Columns>
+
+            <DataGrid.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Name="Details" Header="Details"/>
+                    <MenuItem Name="FileContents" Header="File Contents"/>
+                </ContextMenu>
+            </DataGrid.ContextMenu>
+        </DataGrid>
+    </Grid>
+</Window>

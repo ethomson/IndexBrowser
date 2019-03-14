@@ -1,0 +1,48 @@
+﻿<Window x:Class="IndexBrowser.DetailsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IndexBrowser"
+        mc:Ignorable="d"
+        Title="Index Entry Details" Height="293" Width="515" MinWidth="515" MinHeight="293" MaxHeight="293">
+    <Grid>
+        <Label Content="Path:" HorizontalAlignment="Left" Margin="10,8,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="Path" Height="23" Margin="68,10,10,0" Padding="2,5,0,0" Text="" VerticalAlignment="Top" FontFamily="Lucida Console"/>
+
+        <Label Content="ID:" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="Id" Height="23" Margin="68,38,10,0"  Padding="2,5,0,0" Text="" VerticalAlignment="Top" FontFamily="Lucida Console"/>
+
+        <Label Content="Mode:" HorizontalAlignment="Left" Margin="10,64,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="Mode" HorizontalAlignment="Left" Height="23" Margin="68,66,0,0" Padding="2,5,0,0" Text="" VerticalAlignment="Top" Width="120" FontFamily="Lucida Console"/>
+
+        <Label Content="Stage:" HorizontalAlignment="Left" Margin="273,64,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="Stage" HorizontalAlignment="Left" Height="23" Margin="328,66,0,0" Padding="2,5,0,0" Text="" VerticalAlignment="Top" Width="120" FontFamily="Lucida Console"/>
+
+        <Label Content="Change:" HorizontalAlignment="Left" Margin="10,92,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="Change" HorizontalAlignment="Left" Height="23" Width="161" Margin="68,94,0,0" Padding="2,5,0,0" Text="" VerticalAlignment="Top" FontFamily="Lucida Console"/>
+
+        <Label Content="Modify:" HorizontalAlignment="Left" Margin="273,92,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="Modify" HorizontalAlignment="Left" Height="23" Width="161" Margin="328,94,0,0" Padding="2,5,0,0" Text="" VerticalAlignment="Top" FontFamily="Lucida Console"/>
+
+        <Label Content="Device:" HorizontalAlignment="Left" Margin="10,120,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="Device" HorizontalAlignment="Left" Height="23" Width="161" Margin="68,122,0,0" Padding="2,5,0,0" Text="" VerticalAlignment="Top" FontFamily="Lucida Console"/>
+
+        <Label Content="Inode:" HorizontalAlignment="Left" Margin="273,120,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="Inode" HorizontalAlignment="Left" Height="23" Width="161" Margin="328,122,0,0" Padding="2,5,0,0" Text="" VerticalAlignment="Top" FontFamily="Lucida Console"/>
+
+        <Label Content="UID:" HorizontalAlignment="Left" Margin="10,148,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="UserId" HorizontalAlignment="Left" Height="23" Margin="68,150,0,0" Padding="2,5,0,0" Text="" VerticalAlignment="Top" Width="120" FontFamily="Lucida Console"/>
+
+        <Label Content="GID:" HorizontalAlignment="Left" Margin="273,148,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="GroupId" HorizontalAlignment="Left" Height="23" Margin="328,150,0,0" Padding="2,5,0,0" Text="" VerticalAlignment="Top" Width="120" FontFamily="Lucida Console"/>
+
+        <Label Content="Size:" HorizontalAlignment="Left" Margin="10,176,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="Size" HorizontalAlignment="Left" Height="23" Margin="68,178,0,0" Padding="2,5,0,0" Text="" VerticalAlignment="Top" Width="120" FontFamily="Lucida Console"/>
+
+        <Label Content="Flags:" HorizontalAlignment="Left" Margin="273,176,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="Flags" HorizontalAlignment="Left" Height="23" Margin="328,178,0,0" Padding="2,5,0,0" Text="" VerticalAlignment="Top" Width="120" FontFamily="Lucida Console"/>
+
+        <Button Name="OK" Content="OK" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="75" Height="20" Margin="0,0,10,10"/>
+    </Grid>
+</Window>

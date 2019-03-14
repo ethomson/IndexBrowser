@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="DetailsWindow.xaml" />
+    <None Remove="FileContentsWindow.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Dogged" Version="0.1.0-pre21" />
+  </ItemGroup>
+</Project>
